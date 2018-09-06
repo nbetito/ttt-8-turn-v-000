@@ -12,9 +12,9 @@ def turn(board)
   index = input_to_index(input)
 
 # if index is valid
-  if valid_move?(board,index) == true
+  if valid_move?(board,index)
     move(board,index,"X")
-    puts display_board(board)
+    display_board(board)
   else
     turn(board)
   end
